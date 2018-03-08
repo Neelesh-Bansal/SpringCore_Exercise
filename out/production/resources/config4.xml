@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--Autowire by name
+  <bean id="teaBean" name="hotDrink" class="ex4.Tea"></bean>
+    <bean id="expressBean" class="ex4.ExpressTea"></bean>
+
+    <bean class="ex4.Restaurent"  autowire="byName"></bean>-->
+
+
+   <!--Autowire by type
+    <bean id="expressBean" class="ex4.ExpressTea"></bean>
+
+    <bean class="ex4.Restaurent"  autowire="byType"></bean>-->
+
+
+   <!-- Autowire by constructor-->
+
+    <bean class="ex4.Tea" name="hotDr"></bean>
+    <bean class="ex4.ExpressTea" name="expessBean"></bean>
+    <bean id="restaurent" class="ex4.Restaurent" autowire="constructor" scope="prototype"></bean>
+
+
+
+
+
+
+
+
+
+</beans>

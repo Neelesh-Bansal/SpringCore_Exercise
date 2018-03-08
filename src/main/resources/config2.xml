@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--<bean id="teaBean" class="ex2.Tea"></bean>-->
+    <bean id="expressBean" class="ex2.ExpressTea"></bean>
+
+    <bean id="restaurant3" class="ex2.Restaurent">
+        <property name="hotDrink">
+            <bean id="teaBean" class="ex2.Tea"/>
+        </property>
+    </bean>
+
+    <!--<bean id="restaurant1" name="teaRestaurant" class="ex2.Restaurent">
+        <property name="hotDrink" ref="teaBean"></property>
+    </bean>-->
+
+
+    <bean id="restaurant2" name="expressTeaBean" class="ex2.Restaurent">
+        <property name="hotDrink" ref="expressBean"></property>
+    </bean>
+
+
+
+
+</beans>

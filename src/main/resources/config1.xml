@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="database1" class="ex1.Database">
+        <property name="name" value="poc"></property>
+        <property name="port" value="999"></property>
+    </bean>
+    <bean id="database2" class="ex1.Database">
+        <property name="name" value="po2"></property>
+        <property name="port" value="9999"></property>
+    </bean>
+
+
+
+</beans>
